@@ -1,0 +1,83 @@
+.card{
+    width: 100%;
+    height: 20rem;
+    background-color: hsl(227, 47%, 96%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container{
+    border-top: 4px solid hsl(208, 92%, 53%);
+    
+}
+
+.linear{
+
+    border-top: 4px solid hsl(37, 97%, 70%);
+
+    /* ( hsl(37, 97%, 70%) to hsl(329, 70%, 58%) ) */
+}
+
+.darker{
+    border-top: 4px solid hsl(329, 70%, 58%)
+}
+
+.card img{
+    max-width: 3rem;
+    max-height: 3rem;
+    
+}
+
+.card h1{
+    font-size: 3.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.card-followers {
+    color: hsl(228, 12%, 44%) ;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.card-container p{
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+}
+
+.today{
+    color: hsl(146, 68%, 55%);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.redtoday{
+    color: hsl(356, 69%, 56%) ;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.greentoday{
+    color: hsl(356, 69%, 56%) ;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.today-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}

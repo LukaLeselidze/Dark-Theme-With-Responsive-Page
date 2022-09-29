@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  
+}
+
+.wrapper{
+  
+  padding: 0;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  
+}
+
+#light {
+  background-color: hsl(0, 0%, 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+#dark{
+  background-color: hsl(230, 17%, 14%);
+  left: 0;
+  right: 0;
+  top: 0;
+  
+  position: absolute;
+}
+
+#dark .card{
+  background-color: hsl(228, 28%, 20%);;
+}
+
+#dark .card h1{
+  color: hsl(0, 0%, 100%);
+}
+
+#dark .overview-card{
+ background-color: hsl(228, 28%, 20%);
+}
+
+#dark .last-child{
+  background-color: hsl(228, 28%, 20%);
+ }
+
+#dark .top p{
+ color:  hsl(228, 34%, 66%);
+ }
+
+ #dark .bottom h1{
+  color:  hsl(0, 0%, 100%);
   }
+
+  #dark h3{
+    color: hsl(0, 0%, 100%);;
+  }
+
+  #dark .h2{
+    color: hsl(0, 0%, 100%);;
+  }
+
+  #dark .followers{
+    color: hwb(228 55% 22%);
+  }
+
+  #dark .dark{
+     color: hsl(228, 34%, 66%);
+  }
+
+  #dark .line{
+    border: 1px solid hsl(228, 34%, 66%);;
+  }
+  
+
+.main h2{
+  font-size: 2rem;
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3{
+  font-size: 2.2rem;
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.main .followers {
+  
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+
+}
+
+.line{
+  border: 1px solid hsl(228, 9%, 79%);;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem ;
+}
+
+.dark{
+  font-size: 1.2rem;
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+}
+
+.cardcontainer{
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+}
+
+.overviewcontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+
+.dark-mode{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+@media (min-width: 615px){
+    .main h2{
+      font-size: 2.5rem;
+    }
+
+    .main .followers{
+      font-size: 1.6rem;
+    }
+
+    .main p {
+      font-size: 1.6rem;
+    }
+
+    .cardcontainer{
+      /* display: flex;
+      flex-direction: row;
+      justify-content: space-between; */
+      display: grid;
+      grid-template-columns: 1fr 1fr 
+    }
+
+    .overviewcontainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr  ;
+      
+    }
+
+    .overview-card{
+      margin-bottom: 4.7rem;
+    }
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 944px){
+    .wrapper{
+      margin-left: 8rem;
+      margin-right: 8rem;
+    }
+
+
+    .cardcontainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      
+    }
+
+    .line{
+      display: none;
+    }
+
+    .main{
+      position: relative;
+      margin-bottom: 5rem;
+    }
+
+    .dark-mode{
+      position: absolute;
+      right: 0;
+      top: 20%;
+      gap: 1.5rem;
+    }
+
+    .overviewcontainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+    .overview-card{
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .bottom{
+      bottom: 12%;
+    }
+
+    .last-child{
+      height: 20rem;
+    }
+    
+    
 }
